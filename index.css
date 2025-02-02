@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+}
+
+.subtitle {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+p {
+    line-height: 2;
+}
+.custom-about-content span:hover {
+    font-weight: bold;
+    color: #fb00ff;
+}
+
+.custom-about-content span:active {
+    font-weight: bold;
+    color: #fb00ff;
+}
+/* ---------- header ---------- */
+  
+#home{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+  
+.custom-nav {
+    background-color: black;
+}
+.custom-nav .nav-item {
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+.custom-nav .nav-link {
+    padding: 10px 15px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.custom-nav .nav-link:hover {
+    color: #c8ff00;
+}
+.custom-nav .nav-link:active {
+    color: #c8ff00;
+}
+  
+.header-main{
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+}
+  
+.header-main h1 {
+    position: relative;
+    font-size: 12rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#header-image {
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: 47%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 600px;
+    height: auto;
+}
+
+/* ---------- about ---------- */
+.custom-about-img {
+    background: #db10ff;
+    text-align: center;
+}
+
+.content-about img {
+    width: 50%;
+    height: auto;
+    padding-top: 30px;
+    animation: blink-effect 1s step-end infinite;
+}
+
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+}
+
+.custom-about-content {
+    text-align: center;
+}
+
+.custom-about-content p {
+    padding: 20px 60px 0px;
+}
+
+/* ---------- mbti ---------- */
+.cover {
+    width: 100vw;
+    display: flex;
+    background-color: #c8ff00;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.first-parallel {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.cover p {
+    display: flex;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    color: black;
+    font-size: 50px;
+}
+
+/* ---------- hobby ---------- */
+
+.custom-hobby-first {
+    padding-left: 50px;
+    background: black;
+    color: white;
+}
+
+.custom-hobby-first p {
+    margin-top: 30px;
+}
+.custom-hobby-img {
+    padding-top: 10px;
+}
+
+.custom-hobby-img img {
+    width: 100%;
+    height: auto;
+}
+
+.custom-hobby-second {
+    padding-right: 50px;
+    background: #000000;
+    color: white;
+}
+
+.custom-hobby-second p {
+    margin-top: 30px;
+}
+
+.custom-hobby-dish {
+    background: #a8f368;
+    animation-name: bg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg {
+    0% {background-color: #db10ff;}
+    50% {background-color: #db10ff;}
+    51% {background-color: #c8ff00;}
+    100% {background-color: #c8ff00;}
+}
+
+.custom-hobby-dish img {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- goal ---------- */ 
+.content-goal {
+    text-align: center;
+}
+
+.content-goal p {
+    padding-top: 20px;
+}
+
+/* ---------- footer ---------- */ 
+
+footer {
+    padding: 10px;
+    position: relative;
+    background: black;
+}
+
+.copyright {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.copyright p {
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    #home {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .header-main {
+        text-align: center;
+    }
+
+    #header-image {
+      display: none;
+    }
+
+    .header-main h1 {
+        font-size: 4rem;
+    }
+}
