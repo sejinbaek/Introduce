@@ -40,7 +40,7 @@ p {
 /* ---------- header ---------- */
   
 #home{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding: 10px;
     background: black;
@@ -49,7 +49,7 @@ p {
 }
 
 .navbar {
-    width: 100%;
+    width: 100vw;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -257,7 +257,7 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        width: 100%;
+        width: 100vw;
     }
 
     p {
@@ -269,7 +269,7 @@ footer {
     }
 
     #home {
-        width: 100%;
+        width: 100vw;
         min-height: 100vh;
         max-height: 100vh;
         display: flex;
@@ -288,7 +288,7 @@ footer {
     }
 
     #header-image {
-      display: none;
+       display: none;
     }
 
     .header-main h1 {
