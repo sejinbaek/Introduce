@@ -22,7 +22,6 @@
 } 
 
 body {
-    width: 100%;
     font-family: 'Pretendard-Regular';
     font-size: 20px;
 }
@@ -229,6 +228,10 @@ footer {
 
 
 @media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    
     #home {
         width: 100%;
         min-height: 100vh;
