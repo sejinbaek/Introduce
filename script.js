@@ -3,7 +3,6 @@ const pTag1 = document.querySelector('.first-parallel')
 const textArr1 = 'MBTI ISTP MBTI ISTP MBTI ISTP MBTI ISTP MBTI ISTP'.split(' ');
 
 let count1 = 0;
-let count2 = 0;
 
 function initTexts(element, textArray) {
   textArray.push(...textArray);
