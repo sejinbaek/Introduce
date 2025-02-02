@@ -51,6 +51,7 @@ p {
     background-color: black;
     width: 100%;
     max-width: 100%;
+    overflow: hidden;
 }
 .custom-nav .nav-item {
     font-family: 'GangwonEduPowerExtraBoldA';
