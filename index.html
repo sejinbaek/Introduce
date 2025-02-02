@@ -27,8 +27,8 @@
                     </li>
                 </ul>
                 <div class="header-main">
-                    <h1>HELLO</h1>
-                    <h1>I'M SEJIN</h1>
+                    <h1 id="hello">HELLO</h1>
+                    <h1 id="name">I'M SEJIN</h1>
                     <img id="header-image" src="images/김치하는나-2.png" alt="백세진-1">
                 </div>
             </div> 
@@ -120,47 +120,6 @@
                 <p>Copyright &copy; SEJIN BAEK All rights reserved.</p>
             </div>
         </footer>
-
-        <script>
-            const pTag1 = document.querySelector('.first-parallel')
-            
-            const textArr1 = 'MBTI ISTP MBTI ISTP MBTI ISTP MBTI ISTP MBTI ISTP'.split(' ')
-      
-            let count1 = 0
-      
-            initTexts(pTag1, textArr1)
-      
-            function initTexts(element, textArray) {
-              textArray.push(...textArray)
-              for (let i = 0; i < textArray.length; i++) {
-                element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`
-              }
-            }
-        
-            function marqueeText(count, element, direction) {
-              if (count > element.scrollWidth / 2) {
-                element.style.transform = `translate3d(0, 0, 0)`
-                count = 0
-              }
-              element.style.transform = `translate3d(${direction * count}px, 0, 0)`
-      
-              return count
-            }
-      
-            function animate() {
-              count1++
-      
-              count1 = marqueeText(count1, pTag1, -1)
-      
-              window.requestAnimationFrame(animate)
-            }
-      
-            function scrollHandler() {
-              count1 += 15
-            }
-      
-            window.addEventListener('scroll', scrollHandler)
-            animate()
-        </script>
+        <script src="script.js"></script>
 </body>
 </html>
