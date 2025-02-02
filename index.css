@@ -230,6 +230,14 @@ footer {
         width: 100%;
     }
     
+    p {
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+    
     #home {
         width: 100%;
         min-height: 100vh;
