@@ -64,7 +64,6 @@ p {
 .custom-nav .nav-link {
     padding: 10px 15px 0px;
     color: white;
-    text-decoration: none;
     font-size: 25px;
     transition: 0.2s;
 }
