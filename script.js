@@ -38,3 +38,15 @@ initTexts(pTag1, textArr1);
 
 window.addEventListener('scroll', scrollHandler);
 animate();
+
+//span 색상 변경경
+function colorChange() {
+  this.style.color = "#db10ff";
+  this.style.fontWeight = "bold";
+}
+
+const spanTags = document.querySelectorAll("span");
+
+spanTags.forEach(function(span) {
+  span.addEventListener("click", colorChange);
+});
