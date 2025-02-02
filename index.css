@@ -23,6 +23,7 @@
 body {
     font-family: 'Pretendard-Regular';
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 .subtitle {
@@ -57,7 +58,8 @@ p {
   
 .custom-nav {
     background-color: black;
-    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 .custom-nav .nav-item {
     font-family: 'GangwonEduPowerExtraBoldA';
