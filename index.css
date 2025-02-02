@@ -53,11 +53,11 @@ p {
     background: black;
     color: white;
     font-family: 'GangwonEduPowerExtraBoldA';
-    overflow-x: hidden;
 }
   
 .custom-nav {
     background-color: black;
+    overflow-x: hidden;
 }
 .custom-nav .nav-item {
     font-family: 'GangwonEduPowerExtraBoldA';
