@@ -36,15 +36,6 @@ body {
 p {
     line-height: 2;
 }
-.custom-about-content span:hover {
-    font-weight: bold;
-    color: #fb00ff;
-}
-
-.custom-about-content span:active {
-    font-weight: bold;
-    color: #fb00ff;
-}
 /* ---------- header ---------- */
   
 #home{
@@ -100,7 +91,7 @@ p {
     z-index: 1;
     width: 600px;
     height: auto;
-    animation: blink-effect 3s step-end infinite;
+    animation: blink-effect 1.5s step-end infinite;
 }
 
 @keyframes blink-effect {
@@ -208,6 +199,14 @@ p {
 .custom-hobby-dish img {
     width: 100%;
     height: auto;
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
 }
 
 /* ---------- goal ---------- */ 
