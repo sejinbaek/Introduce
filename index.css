@@ -21,6 +21,7 @@
 } 
 
 body {
+    width: 100vw;
     font-family: 'Pretendard-Regular';
     font-size: 20px;
     overflow-x: hidden;
@@ -41,16 +42,26 @@ p {
 #home{
     width: 100%;
     height: 100vh;
-    padding: 10px 20px;
+    padding: 10px;
     background: black;
     color: white;
     font-family: 'GangwonEduPowerExtraBoldA';
 }
 
-.custom-nav {
-    background-color: black;
+.navbar {
     width: 100%;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
+    max-width: 100vw;
     overflow: hidden;
 }
 .custom-nav .nav-item {
@@ -62,6 +73,7 @@ p {
     font-size: 25px;
     transition: 0.2s;
 }
+
 .custom-nav .nav-link:hover {
     color: #c8ff00;
 }
@@ -200,7 +212,7 @@ p {
 .custom-hobby-dish img {
     width: 100%;
     height: auto;
-    animation: rotate_image 10s linear infinite;
+    animation: rotate_image 5s linear infinite;
     transform-origin: 50% 50%;
 }
 
@@ -227,7 +239,7 @@ p {
 /* ---------- footer ---------- */ 
 
 footer {
-    padding: 10px;
+    padding: 10px 0px;
     position: relative;
     background: black;
 }
@@ -266,6 +278,11 @@ footer {
         align-items: center;
         height: auto;
     }
+
+    .custom-nav .nav-link {
+        font-size: 20px;
+    }
+
     .header-main {
         text-align: center;
     }
@@ -287,5 +304,9 @@ footer {
     }
     .custom-hobby-second {
         padding-right: 0px;
+    }
+
+    .copyright p {
+        padding: 10px 15px;
     }
 }
